@@ -15,12 +15,12 @@ function Main() {
             <h1>Alexandru-Cristian Popescu</h1>
             <p>Software Engineer</p>
             <ul id="list">
-                <li onClick={() => openContent('info')}>Info</li>
                 <li onClick={() => openContent('about')}>About</li>
                 <li onClick={() => openContent('projects')}>Projects</li>
+                <li onClick={() => openContent('skills')}>Skills</li>
                 <li onClick={() => openContent('contact')}>Contact</li>
             </ul>
-            {activeContent === 'info' && (
+            {activeContent === 'about' && (
                 <InfoContainer>
                     <Info isOpen={true} onClose={closeContent}/>
                 </InfoContainer>
